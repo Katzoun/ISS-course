@@ -1,0 +1,226 @@
+%%%%%%%%%%  rovnice pro spectrum - just copy them out ... 
+% new version for 2022/23 - the old stuff is below ! 
+
+\documentclass{article}[12pt]
+\usepackage{vmargin} % for the intelligent margin definition
+\setpapersize{A4}
+\setmarginsrb{10 mm}{10 mm}{10 mm}{10 mm}{0 mm}{0 mm}{0 mm}{0 mm}
+
+\newcommand{\Dfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+\def\janbm#1{{\bf #1}}
+%%%%%%%%%%% rovnice
+\def\ejo{e^{j\omega}}
+\def\mejo{e^{-j\omega}}
+\def\zm1{z^{-1}}
+\newcommand{\D}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+$${\bf c} = {\bf A} {\bf x}^\top$$
+
+$${\bf d} = {\bf B} {\bf x}^\top$$
+
+% synth obecne 
+$$x_s[n] = c_0 + c_1 a_1[n] + c_2 a_2 [n] + \ldots + c_{\frac{N}{2}}
+a_{\frac{N}{2}} [n] $$
+
+%for cosines ... 
+$$x_s[n]  = c_0 +  c_1 \cos (2 \pi \frac{1}{N} n) + c_2 \cos (2 \pi
+\frac{2}{N} n) + \ldots + c_{\frac{N}{2}}\cos (2 \pi
+\frac{\frac{N}{2}}{N} n)$$
+
+
+$$a[n] = e^{j 2 \pi \frac{k}{N} n} = \cos 2 \pi \frac{k}{N} n + \sin 2
+\pi \frac{k}{N} n $$
+
+%dft 
+$$X[k]= \sum_{n=0}^{N-1}x[n] e^{-j 2 \pi \frac{k}{N} n}$$ %, ~~~k = 0\ldots N-1 $$
+
+$$a[n] = e^{j 2 \pi \frac{k}{N} n}~~~~~~~~~~~a^\star[n] = e^{-j 2 \pi
+  \frac{k}{N} n}$$
+
+% baterie complex exp ... 
+% baterie \cosinu ... 
+$$a_0[n] = e^{j 2 \pi \frac{0}{N} n}$$
+$$a_1[n] = e^{j 2 \pi \frac{1}{N} n}$$
+$$a_2[n] = e^{j 2 \pi \frac{2}{N} n}$$
+$$\ldots$$
+$$a_{\frac{N}{2}}[n] = e^{j 2 \pi \frac{\frac{N}{2}}{N} n}$$
+ 
+% koeficienty 
+$$X[0] = \sum_{n=0}^{N-1} a_0^\star[n] x[n]$$
+$$X[1] = \sum_{n=0}^{N-1} a_1^\star[n] x[n]$$
+$$X[2] = \sum_{n=0}^{N-1} a_2^\star[n] x[n]$$
+$$\ldots$$
+$$X[\frac{N}{2}] = \sum_{n=0}^{N-1} a_{\frac{N}{2}}^\star[n] x[n]$$
+
+% matrix form 
+$${\bf X} = {\bf A}^\star  {\bf x}^\top$$
+
+% synt from exp ... 
+% synth obecne 
+$$x_s[n] = c_0 + c_1 a_1[n] + c_2 a_2 [n] + \ldots + c_{\frac{N}{2}}
+a_{\frac{N}{2}} [n] $$
+
+$$x_s[n] = X[0] + X[1] e^{j 2 \pi \frac{1}{N} n}  + X[2] e^{j 2 \pi
+  \frac{2}{N} n} + \ldots + c_{\frac{N}{2}} e^{j 2 \pi
+  \frac{\frac{N}{2}}{N} n}$$
+
+$$x_s[n] = X[0] + \sum_{k = 0}^{\frac{N}{2}} 2 |X[k]| \cos \left ( 2
+\pi \frac{k}{N} n + \arg X[k] \right ) $$
+
+% decomposition 
+$$\cos \alpha = \frac{e^{j \alpha} + e^{-j \alpha}}{2}$$ 
+
+$$X[k] e^{j 2 \pi \frac{k}{N} n} + X^\star[k] e^{-j 2 \pi \frac{k}{N}
+  n} = 2 |X[k]| \cos \left (2 \pi \frac{k}{N} n +
+\arg X[k] \right ) $$
+
+$$e^{-j 2 \pi \frac{k}{N}n} = e^{-j (2 \pi \frac{k}{N} - 2\pi)n}
+ = e^{j 2\pi  \frac{N-k}{N} n} $$
+
+%dft  anal and synt 
+$$X[k]= \sum_{n=0}^{N-1}x[n] e^{-j 2 \pi \frac{k}{N} n}$$ %, ~~~k = 0\ldots N-1 $$
+
+$$ \left( e^{j 2 \pi \frac{k}{N} n} \right )^\star =  e^{-j 2 \pi
+   \frac{k}{N} n} $$
+
+$$x_s[n] = \sum_{k=0}^{N-1} X[k] e^{+j 2 \pi \frac{k}{N} n}$$
+
+$$X[k] e^{j 2 \pi \frac{k}{N} n} + X[-k] e^{-j 2 \pi \frac{k}{N}
+  n} = 2 |X[k]| \cos \left (2 \pi \frac{k}{N} n +
+\arg X[k] \right ) $$
+
+% idft 
+$$x_s[n] = \sum_{k=0}^{N-1} X[k] e^{+j 2 \pi \frac{k}{N} n}$$
+
+$$||a[n]||_2 = \sum_{n=0}^{N-1} |a[n]|^2$$
+
+$$||e^{+j 2 \pi \frac{k}{N} n}||_2 = \sum_{n=0}^{N-1} |e^{+j 2 \pi
+  \frac{k}{N} n}|^2 =  \sum_{n=0}^{N-1} 1 = N $$
+
+$$X[k]= \sum_{n=0}^{N-1}x[n] e^{-j 2 \pi \frac{k}{N}
+  n},~~~~~~~~~
+x[n] = \frac{1}{N}\sum_{k=0}^{N-1} X[k] e^{+j 2 \pi \frac{k}{N} n} $$
+
+%dtft 
+$$\omega = 2 \pi \frac{f}{F_s}$$
+
+$$\tilde{X}(\ejo) = \sum_{n = 0}^{N-1} x[n] e^{-j\omega n}$$ 
+
+
+
+
+% ---------------------------------------------------
+\hrule 
+
+old ones 
+
+\hrule 
+
+$$f(x) = \cos (x) $$
+
+$$x[n] = \cos(~~~~~~~~~ n) $$
+
+$$x[n] = \cos(2\pi~\frac{1}{8000}~ n) $$
+
+$$x[n] = \cos(2\pi~\frac{2}{8000}~ n) $$
+
+$$x[n] = \cos(2\pi~\frac{440}{8000}~ n) $$
+
+$$f = \frac{f_{skutecna}}{F_s}, ~~~~~~ f_{skutecna} = f \,F_s$$
+
+$$f = \frac{1}{Fs}~~~~~~f = 0~~~~~~f = \frac{1}{2}~~~~~~f = 1$$
+
+$$x[n] = A \cos(2 \pi f n + \phi)$$
+
+$$c = \sum_{n=0}^{N-1} x[n] a[n]$$
+
+% baterie \cosinu ... 
+$$a_0[n] = \cos (2 \pi \frac{0}{N} n)$$
+$$a_1[n] = \cos (2 \pi \frac{1}{N} n)$$
+$$a_2[n] = \cos (2 \pi \frac{2}{N} n)$$
+$$\ldots$$
+$$a_{\frac{N}{2}}[n] = \cos (2 \pi \frac{\frac{N}{2}}{N} n)$$
+ 
+% koeficienty 
+$$c_0 = \sum_{n=0}^{N-1} a_0[n] x[n]$$
+$$c_1 = \sum_{n=0}^{N-1} a_1[n] x[n]$$
+$$c_2 = \sum_{n=0}^{N-1} a_2[n] x[n]$$
+$$\ldots$$
+$$c_{\frac{N}{2}} = \sum_{n=0}^{N-1} a_{\frac{N}{2}}[n] x[n]$$
+
+%maticove 
+$${\bf c} = {\bf A} {\bf x}$$
+
+%re-synt 
+$$xs[n]  = c_0 +  c_1 \cos (2 \pi \frac{1}{N} n) + c_2 \cos (2 \pi
+\frac{2}{N} n) + \ldots + c_{\frac{N}{2}}\cos (2 \pi
+\frac{\frac{N}{2}}{N} n)$$
+
+% relation sin cos 
+$$\sin(x) = \cos(x - \frac{\pi}{2})$$
+
+% baterie sinu a cosinu 
+$$\begin{array}{ll}
+a_0[n] = \cos (2 \pi \Dfrac{0}{N} n)  & b_0[n] = \sin (2 \pi \Dfrac{0}{N} n)\\
+&\\
+a_1[n] = \cos (2 \pi \Dfrac{1}{N} n)  & b_1[n] = \sin (2 \pi \Dfrac{1}{N} n)\\
+&\\
+a_2[n] = \cos (2 \pi \Dfrac{2}{N} n)  & b_2[n] = \sin (2 \pi \Dfrac{2}{N} n)\\
+\ldots        & \ldots \\
+a_{\frac{N}{2}}[n] = \cos (2 \pi \frac{\frac{N}{2}}{N} n) & b_{\frac{N}{2}}[n] = \sin (2 \pi \frac{\frac{N}{2}}{N} n)
+ \\
+\end{array} $$ 
+
+% koeficienty sinu i cosinu
+$$\begin{array}{ll} 
+c_0 = \D\sum_{n=0}^{N-1} a_0[n] x[n]&d_0 = \D\sum_{n=0}^{N-1} b_0[n] x[n] \\
+&\\
+c_1 = \D\sum_{n=0}^{N-1} a_1[n] x[n]&d_1 = \D\sum_{n=0}^{N-1} b_1[n] x[n] \\
+&\\
+c_2 = \D\sum_{n=0}^{N-1} a_2[n] x[n]&d_2 = \D\sum_{n=0}^{N-1} b_2[n] x[n] \\
+\ldots&\ldots\\
+c_{\frac{N}{2}} = \D\sum_{n=0}^{N-1} a_{\frac{N}{2}}[n] x[n] & 
+d_{\frac{N}{2}} = \D\sum_{n=0}^{N-1} b_{\frac{N}{2}}[n] x[n] \\
+\end{array} $$ 
+
+%maticove 
+$${\bf c} = {\bf A} {\bf x}, ~~~~~{\bf d} = {\bf B} {\bf x}$$
+
+%re-synt 
+$$\begin{array}{lcl}
+xs[n] & = c_0 & + ~ c_1 \cos (2 \pi \D\frac{1}{N} n) + c_2 \cos (2 \pi
+\D\frac{2}{N} n) + \ldots + c_{\frac{N}{2}}\cos (2 \pi
+\D\frac{\frac{N}{2}}{N} n)\\
+&\\
+  &&+ ~ d_1 \sin (2 \pi \D\frac{1}{N} n) + d_2 \sin (2 \pi
+\D\frac{2}{N} n) + \ldots + d_{\frac{N}{2}}\sin (2 \pi
+\D\frac{\frac{N}{2}}{N} n) \\
+\end{array}$$
+
+% komplex
+$$X_k = c_k - j d_k$$
+
+% odvozeni 
+$$\begin{array}{lcl}
+X_k & = & c_k - j d_k \\
+&&\\
+    & = & \D\sum_{n=0}^{N-1}x[n] \cos(2 \pi \Dfrac{k}{N} n) - j\D\sum_{n=0}^{N-1}x[n] \sin(2 \pi \Dfrac{k}{N} n) \\
+&&\\
+    & = & \D\sum_{n=0}^{N-1}x[n] \left [\cos(2 \pi \Dfrac{k}{N} n) - j\sin(2 \pi \Dfrac{k}{N} n) \right]\\
+&&\\
+    & = & \D\sum_{n=0}^{N-1}x[n] e^{-j 2 \pi \frac{k}{N} n}\\
+\end{array}$$
+
+% ultimate DFT 
+$$X[k]= \sum_{n=0}^{N-1}x[n] e^{-j 2 \pi \frac{k}{N} n}, ~~~k =
+0\ldots N-1 $$
+
+%maticove 
+$${\bf X} = {\bf W} {\bf x} $$ 
+
+% idft 
+$$x[n] = \frac{1}{N} \sum_{k=0}^{N-1}X[k] e^{+j 2 \pi \frac{k}{N} n}$$
+\end{document}
