@@ -1,0 +1,9 @@
+Pulsemestrální zkou¹ka ISS, skupina BIB pátek 16.11.2007
+
+otázka  1  2  3  4  5  6  7  8  9  10
+
+zadání
+A	D  C  A  C  C  A  C  A  B  D
+B	C  A  B  B  A  A  A  A  B  D
+C	B  C  D  B  B  A  C  B  B  D
+D	A  C  C  D  B  A  B  D  B  A

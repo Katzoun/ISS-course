@@ -1,0 +1,8 @@
+Klic - semestralni zkouska ISS 17.1.2006
+
+skup  1  2  3  4  5    6  7  8  9 10   11 12 13 14 15   16 17 18 19 20
+A     A	 B  A  D  D    D  C  C	B  D	B  D  B	 C  D    A  B  C  C  C  
+B     A	 B  A  D  D    C  C  D  B  D	C  B  A  B  D    A  B  B  C  C
+C     A	 D  B  D  B    A  C  C  B  D	D  A  C  A  D    A  B  B  C  C
+D     A	 D  B  D  B    B  C  D	B  A	D  C  D  D  D    A  B  D  C  C
+

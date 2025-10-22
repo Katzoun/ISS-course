@@ -1,0 +1,61 @@
+Komentare k reseni pulsemestralky ISS 2008 
+Honza Cernocky, 3.12.2008
+======================================================================
+
+... Ještì si s kolegy myslíme že BIA D pøíklad 3 by mìl být B a ne D. 
+
+... Dle vzorce ze slajdù zakl_sig.pdf(str. 21) by mìl být støední výkon pro harmonický
+signál (což pro y(t) na intervalu od -1 do 1 je) roven C1^2/2, což mi 
+vychází 10^6/2 (tedy možnost C nikoli D). 
+
+HONZA: 
+Uvedomte si, jake ma limitovany signal velikosti a jak vypada. Limitovanim 
+"velke" kosinusovky vznikne prakticky pravouhly signal y(t), ktery ma v kladne 
+casti velikost 1 a v zaporne velikost -1. Vzhledem k tomu, ze je pravouhly, 
+na nej nelze aplikovat vzorecek na vypocet str. vykonu 
+cosinusovky, a uz vubec ne s puvodni amplitudou. Stredni vykon se pocita jako 
+
+p_str = 1 / T \integral_{pres jednu periodu} y^2(t) dt
+
+hodnota y^2(t) je prakticky porad 1, takze integral bude T, po nasobeni 1/T
+to bude 1. 
+
+-----------------------------------------------------------------------
+... mám nejasnosti ohlednì pøíkladu è.7 páteèní (31.10.2008) skupiny B.
+Podle mého názoru (a selského rozumu :-)) pøi nakreslení dvou zadaných 
+bází b1(t) = 1 a b2(t) = -t+1 do soustavy souøadnic je z vzniklého obrázku 
+zøejmé, že tyto 2 báze na sebe kolmé nejsou (což tedy znamená, že nejsou 
+ortogonální). Toto lze ovìøit i poèetnì volbou 2 vektorù - pro b1(t) 
+napø. v1 = (1, 0), pro b2(t) napø. v2 = (1, -1), pøi skalárním souèinu 
+(pokud je roven nule jsou kolmé) tìchto vektorù v1*v2 = 1*1 + 0*(-1) = 1 opìt 
+dostávám, že na sebe kolmé nejsou. Prosím Vás o vyjasnìní tohoto pøíkladu.
+
+... Pøíklad 7 se zabývá tím, zda jsou báze ortogonální. Pokud si nakreslíme 
+graf b1(t)=1 a b2(t)=-t+1 v intervalu <0;2>, tak mùžeme urèit vektory 
+pro b1 = [1,0] a pro b2[2,-2]. Ortogonalitu zjistíme, že vypoèítáme 
+b1*b2T=1*2+0*-2=2 a pokud vím, tak ortogonální báze jsou pokud je skalární 
+souèin roven 0 a ne roven 2, takže by mìla vycházet odpovìï, že báze nejsou 
+ortogonální (B) místo (A), kde se tvrdí, že jsou ortogonální. 
+Jak to tedy je s výsledky?
+
+HONZA: 
+Selsky rozum v tomto prikladu Bohu zel nepomuze (i kdyz jinak mam jeho pouziti 
+rad). Pokud byste si nakreslil osu x dlouhou pro interval [0,2] 1 cm a osu y 
+dlouhou pro ten stejny interval 1km, ty cary by take nebyly kolme. Rovnez 
+nelze FUNKCE prekreslit nebo s nimi pocitat jako s VEKTORY. Jedina moznost, 
+jak zjistovat ortogonalitu dvou FUNKCI je napsat si jejich skalarni soucin: 
+
+\integral_{spodni mez}^{horni mez} b1(t) b2(t)* dt
+
+Pokud toto vyjde nula, funkce jsou ortogonalni, pokud nevyjde, nejsou. 
+b2(t)* znamena komplexni sdruzeni, coz v pripade realnych bazi nema vyznam. 
+Nejlepsi by bylo si ty dve funkce nakreslit, a na papire vynasobit a 
+zintegrovat, ale pro ty, kterym se to chce pocitat: 
+
+\integral_0^2 1 (-t+1) dt = [ -t^2 / 2 + t ] (toto je primitivni funkce, 
+  kterou je nutne vyhodnotit pro 0 a pro 2 a odecist ...
+pro t=2:    - 2^2 / 2 + 2 = 0 
+pro t=0:    - 0^2 / 2 + 0 = 0 
+takze vysledek je 0, baze JSOU ortogonalni. 
+
+-----------------------------------------------------------------------

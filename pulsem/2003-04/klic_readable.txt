@@ -1,0 +1,10 @@
+Klíè k pùlsem. zkou¹ce ISS 2003-2004:
+
+Otázka  1  2  3  4  5    6  7  8  9 10
+--------------------------------------
+skupina
+A	D  A  B  C  D    A  A  A  B  C
+B	C  C  C  A  B    C  A  C  C  D
+C	B  D  A  D  A    B  B  B  D  A
+D	A  B  D  B  C    D  B  D  A  B
+

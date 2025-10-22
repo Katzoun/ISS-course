@@ -1,0 +1,17 @@
+Do referencniho reseni se Bohu zel vloudila chyba, v prikladu 8 je ve vsech skupinach normalisace normovanou kruhovou frekvenci, coz je samozrejme spatne. 
+
+SPATNE: 
+omega' = omega / Omega_s
+
+DOBRE:
+omega' = omega / F_s 
+
+Spravne reseni je tedy nasledujici: 
+
+A: omega_1 = 2000pi/10000 = 0.2pi rad
+
+B: omega_1 = 4000pi/10000 = 0.4pi rad
+
+C: omega_1 = 6000pi/10000 = 0.6pi rad
+
+D: omega_1 = 8000pi/10000 = 0.8pi rad

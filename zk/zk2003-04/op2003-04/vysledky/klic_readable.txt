@@ -1,0 +1,8 @@
+Klíè ke opravné zkou¹ce ISS 6/2/2004. 
+
+Otázka  1  2  3  4  5    6  7  8  9 10   11 12 13 14 15   16 17 18 19 20
+------------------------------------------------------------------------
+skupina
+A       D  C  D  C  B	 B  C  A  B  A    B  B  B  D  A    D  B  A  B  A
+
+B       A  C  C  C  C    B  C  A  A  B    B  B  A  D  A    D  B  A  B  A

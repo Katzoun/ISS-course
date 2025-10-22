@@ -1,0 +1,5 @@
+Klic - semestralni zkouska ISS - 1. opravka, 25.1.2008
+
+skup  1  2  3  4  5    6  7  8  9 10   11 12 13 14 15   16 17 18 19 20
+A     A	 A  B  A  D    D  A  D	D D    B  C  B	C  C	D  D  C	 B  B
+B     B	 A  A  C  D    D  B  D	A A    C  A  A	A  C	D  D  A	 B  B

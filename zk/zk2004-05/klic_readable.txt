@@ -1,0 +1,7 @@
+Klic - semestralni zkouska ISS 21.1.2005
+
+skup  1   2   3   4   5    6   7   8   9  10   11  12  13  14  15   16  17  18  19  20 
+A     C   D   A   C   D    A   A   B   D   B    A   C   B   C   D    B   C   C   A   B 
+B     D   C   C   B   B    D   B   A   B   B    B   C   A   D   A    A   C   A   A   C 
+C     B   B   D   D   A    C   C   B   A   A    D   A   C   D   B    A   C   A   A   A 
+D     A   A   B   A   C    B   D   A   C   A    C   B   D   C   C    B   C   B   A   D 

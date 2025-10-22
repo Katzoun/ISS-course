@@ -1,0 +1,13 @@
+V opravách pøíkladu 6 ve v¹ech skupinách je v referenèním øe¹ení chyba. 
+
+Pøenosová funkce má být 
+H(s) = RCs / (1 + RCs), nikoliv H(s) = 1 / (1 + RCs)
+
+Pro zadání A tedy vychází (hodnota RC = 1)
+
+H(j200) = j200 / (1+j200). Jednièka je oproti 200 velmi malá, mù¾e se zanedbat, 
+  proto H(j200) = j200 / j200 = 1. 
+
+V ostatních skupinách je zadaná kruhová frekvence také oproti 1 velká, tak¾e
+je výsledek stejný: 1. 
+

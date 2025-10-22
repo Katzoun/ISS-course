@@ -1,0 +1,12 @@
+Klíè ke zkou¹ce ISS 28/1/2004. 
+
+Otázka  1  2  3  4  5    6  7  8  9 10   11 12 13 14 15   16 17 18 19 20
+------------------------------------------------------------------------
+skupina
+A       D  C  D  A  B    B  A  D  B  B    B  D  A  D  C    B  C  C  D  B
+
+B       A  A  B  C  A    B  A  C  C  B    D  C  B  C  D    B  B  A  D  B
+
+C       B  D  C  B  D    B  C  A  A  B    A  B  D  B  A    B  A  B  D  B
+
+D       C  B  A  D  C    B  B  B  D  B    C  A  C  A  B    B  C  A  D  B

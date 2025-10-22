@@ -1,0 +1,22 @@
+Pulsemestrální zkou¹ka ISS, 10.11.2005
+
+otázka  1  2  3  4  5  6  7  8  9  10
+
+skupina 
+A	A  B  B  D  B  A* B+ B  D  C	
+B	B  B  B  A  A  B* B+ C  A  D
+
+
+(*) otázka 6 o elektrikáøi Frantovi a elektrikáøi Honzovi nebyla pøesnì 
+    formulovaná a odpovìï byla nejasná. Pokud by pro oba platila stejná 
+    èasová osa a dr¾eli se oba stejného drátu, musel být jejich pohyb popsán
+    stejnou rovnicí. 
+
+  => Tato odpovìï nebude hodnocena, za otázku udìluji automaticky 2.5 b
+
+(+) u otázky 7 byly mylnì uvedeny i koeficienty s indexem 0. 
+    Pøesnì vzato tedy nebyla ani jedna odpovìï správnì. Pokud jste tuto 
+    chybu opravili, byla správnì odpovìï B. 
+
+  => jako správné budou hodnoceny odpovìdi:
+     '-' (ani jedna správná) a 'B'. 

@@ -1,0 +1,9 @@
+Pulsemestrální zkou¹ka ISS, skupina BIA pondìlí 12.11.2007
+
+otázka  1  2  3  4  5  6  7  8  9  10
+
+zadání
+A	B  D  D  D  A  D  B  C  A  A
+B	C  C  C  C  B  D  D  B  A  B
+C	D  C  B  B  C  A  D  B  A  D
+D	A  B  A  C  B  A  A  C  A  D

@@ -1,0 +1,9 @@
+Pulsemestrální zkou¹ka ISS, skupina BIB streda  21.10.2009
+
+otázka  1  2  3  4  5  6  7  8  9  10
+
+zadání
+A	C  A  D  D  B  C  D  D  A  D  
+B	B  C  C  A  B  C  C  B  A  D
+C	B  B  B  B  A  C  C  C  B  D
+D	D  D  A  C  B  C  D  A  B  D

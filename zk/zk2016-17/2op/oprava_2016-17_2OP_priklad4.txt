@@ -1,0 +1,5 @@
+Referencni reseni neni dobre prikladu 4 ve skupine C neni dobre, 
+spravny vysledek je 
+
+omega_a = 2 * pi / theta = 2 * pi / 4 = pi / 2. 
+

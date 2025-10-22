@@ -1,0 +1,18 @@
+%exp bases: 
+T1 = 1; om1 = 2*pi; delta = 0.005; t = 0:delta:1-delta;  % not quite 1 so that we get precise results. 
+eplus = exp(j * om1 *t); eminus = exp(-j * om1 *t); 
+
+%real cosine
+x = cos(om1 *t); 
+plot3(t,real(eplus),imag(eplus), t,real(eminus),imag(eminus), t,real(x),imag(x)); 
+grid; xlabel('t'); ylabel('REAL'); zlabel('IMAG'); 
+c1 = 1 / T1 * x * eplus' * delta
+cminus1 = 1 / T1 * x * eminus' * delta
+
+%imag cosine
+x = j*cos(om1 *t); 
+plot3(t,real(eplus),imag(eplus), t,real(eminus),imag(eminus), t,real(x),imag(x)); 
+grid; xlabel('t'); ylabel('REAL'); zlabel('IMAG'); 
+c1 = 1 / T1 * x * eplus' * delta
+cminus1 = 1 / T1 * x * eminus' * delta
+

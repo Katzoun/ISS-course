@@ -1,0 +1,12 @@
+Klic - semestralni zkouska ISS 20.1.2010
+
+skup  1  2  3  4  5    6  7  8  9 10   11 12 13 14 15   16 17 18 19 20
+A     B  B  X  A  A    C  D  C	D  A   B  A  B	C  A	D  D  D	 B  B
+B     C  C  X  B  A    A  D  C	C  A   C  B  A	D  C	D  A  D	 B  B
+C     C	 A  X  C  A    D  D  C	A  B   A  C  A	B  D	A  B  D	 B  B
+D     B	 C  X  D  A    B  D  C	B  B   D  D  A	A  B	D  C  D	 B  B
+
+V zadani prikladu 3 ve vsech skupinach byla chyba, namisto 2+x, 2-x 
+melo byt 2+t, 2-t. Diky tomu zadani moc nedavalo smysl a tento priklad
+nebudu hodnotit - ma chyba. Vsechny odpovedi, i zadna, budou 
+hodnoceny 2.5 body. 
