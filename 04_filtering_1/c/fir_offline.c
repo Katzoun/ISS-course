@@ -16,7 +16,7 @@ FILE *ifile, *ofile;
 int16_t x[MAXN], y[MAXN];
 uint32_t N,n; 
 
-main (int argc, char *argv[]) {
+int main (int argc, char *argv[]) {
   ifile = fopen(argv[1],"rb"); 
   ofile = fopen(argv[2],"wb"); 
 
