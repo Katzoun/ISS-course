@@ -1,1 +1,10 @@
 venv/
+.venv/
+**/__pycache__/
+*.pyc
+/proj/known.zip
+/proj/239026.zip
+/proj/valid.zip
+/proj/known/
+/proj/239026/
+/proj/valid/
