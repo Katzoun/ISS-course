@@ -1,0 +1,3 @@
+PYTHONPATH=/home/tomas/abracadabra:$PYTHONPATH song_recogniser initialise
+PYTHONPATH=/home/tomas/abracadabra:$PYTHONPATH song_recogniser register ~/abracadabra/known
+PYTHONPATH=/home/tomas/abracadabra:$PYTHONPATH song_recogniser recognise ~/abracadabra/valid/3.wav
