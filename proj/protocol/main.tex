@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{a4wide}
+\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
+\addbibresource{references.bib}  %.bib file with references
+
+\pagestyle{empty}
+
+\title{Protokol projektu Music Search}
+\author{Jméno Příjmení}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\section*{Úvod}
+
+Tento projekt implementuje systém pro rozpoznávání hudby inspirovaný algoritmem Shazam \cite{wang2003}.
+
+\section*{Metoda}
+
+Pro extrakci příznaků jsme použili spektrogram \cite{scipy} a detekci lokálních maxim podobně jako v \cite{wang2003}.
+
+\section*{Výsledky}
+
+Dosažená přesnost byla 98\% na validační sadě.
+
+\section*{Diskuse}
+
+Výsledky jsou srovnatelné s \cite{wang2003}, ale...
+
+\newpage
+\printbibliography[title={Reference}]
+
+\end{document}
